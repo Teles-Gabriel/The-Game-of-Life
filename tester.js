@@ -32,7 +32,10 @@ function setup() {
     grid = array2d(cols, rows);
     for(let i = 0; i < cols; i++){
         for(let j = 0; j < rows; j++){
-            grid[i][j] = floor(random(2));
+            if(i>3 && j>3){
+                grid[i][j]=1
+            }
+             //floor(random(2));
         }
     }
 } 
