@@ -88,20 +88,6 @@ function draw(){
      
 }
 
-/*
-A função countNeighbors(grid,x,y) é usada para contar o número de vizinhos vivos de uma célula na posição (x,y) na matriz grid.
-o loop aninhado passa por todas as células ao redor da célula(x,y) e soma seus valores.
-O valor de cada célula vizinha é obtido usando a fórmula:
-    let col = (x+i+cols)%cols 
-    let row = (y+j+rows)%rows
-que é usada para garantir que o indice da célula esteja dentro dos limites da matriz
-No final do loop, a função subtrai o valor da célula (x,y) para garantir que não conte a célula em si, em seguida retorna o total de vizinhos vivos
-A função array2d(cols, rows) é usada para criar uma matriz bidimensional com o número de colunas cols e o número de linhas rows. 
-Ela cria um novo array com cols elementos e, em seguida, deve preencher cada elemento do array com um novo array com rows elementos.
-No entanto, essa função não preenche o array com os elementos necessários.
-
-*/
-
 function countNeighbors(grid, x, y){
     let sum = 0;
 
@@ -126,4 +112,5 @@ A função array2d(), cria uma matriz (ou seja, um array bidimensional)
 
 function array2d(cols, rows) {
     let arr = new Array(cols);
+    return arr
 }
